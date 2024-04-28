@@ -8,3 +8,5 @@ results = cursor.fetchall()
 print(results)
 
 db.close()
+
+
