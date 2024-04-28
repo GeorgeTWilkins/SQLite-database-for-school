@@ -7,6 +7,6 @@ cursor.execute(sql)
 results = cursor.fetchall()
 print(results)
 
-db.close(2)
+db.close(3)
 
 
