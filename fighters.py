@@ -87,15 +87,15 @@ while True:
     user_input = input("\nWhat would you like to do.\n1. Print all aircraft\n2. Print all aircraft ordered by speed desc\n3. Print all aircraft ordered by climb ratedesc\n4. Print all aircraft ordered by range desc\n5. Print all ordered by payload desc\n0. Exit\n")
     if user_input == "1":
         print_all_aircraft()
-    if user_input == "2":
+    elif user_input == "2":
         print_all_aircraft_sorted_speed_desc()
-    if user_input == "3":
+    elif user_input == "3":
         print_all_aircraft_sorted_climb_rate_desc()
-    if user_input == "4":
+    elif user_input == "4":
         print_all_aircraft_sorted_range_desc()
-    if user_input == "5":
+    elif user_input == "5":
         print_all_aircraft_sorted_payload_desc()
-    if user_input == "0":
+    elif user_input == "0":
         break
     else:
         print("That was not an option\n")
