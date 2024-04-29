@@ -11,12 +11,16 @@ DATABASE = "fighters.db"
 
 #functions
 def print_all_aircraft():
+    '''print all the aircraft data neatly'''
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
-    sql = "SELECT * FROM fighter;"
+    sql = "SELECT * FROM fighters;"
     cursor.execute(sql)
     results = cursor.fetchall()
-    print(results)
+    #loop through results first
+    for fighter in results:
+        print(fighter)
+    #loop finsihed now
     db.close()
 
 
